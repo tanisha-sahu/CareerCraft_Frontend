@@ -50,7 +50,6 @@ const Portfolio: React.FC = () => {
       });
   
       if (!response.ok) {
-        const errorData = await response.json();
         showToast('danger', 'Failed to delete portfolio.');
         return;
       }

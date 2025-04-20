@@ -9,8 +9,10 @@ const ContactSection = () => {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // your logic
+
 
     console.log(import.meta.env.VITE_EMAILJS_USER_ID);
 
