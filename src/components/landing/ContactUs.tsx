@@ -135,7 +135,7 @@ const ContactSection = () => {
 
           {/* Right Side: Contact Form */}
           <div className="bg-white p-8 rounded-xl shadow-lg transition-all hover:shadow-2xl">
-            <form>
+            <form  onSubmit={handleSubmit}>
               {/* Name Field */}
               <div className="relative z-0 w-full mb-5 group">
                 <input
@@ -233,7 +233,7 @@ rder-blue-600 peer transition-all"
               </div>
 
               <button
-                onClick={handleSubmit} // No need to prevent default here again
+                // No need to prevent default here again
                 type="submit"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"
               >
