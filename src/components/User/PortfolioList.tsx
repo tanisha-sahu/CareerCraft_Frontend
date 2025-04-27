@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
     if (!confirmDelete) return;
   
     try {
-      const response = await fetch(`http://localhost:3000/api/portfolio/delete/${id}`, {
+      const response = await fetch(`https://creercraftbackend-mongouri.up.railway.app/api/portfolio/delete/${id}`, {
         method: 'DELETE',
         credentials: 'include',
       });

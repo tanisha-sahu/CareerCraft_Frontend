@@ -31,7 +31,7 @@ const ResumeATSChecker: React.FC = () => {
     formData.append('resume', resume);
 
     try {
-      const res = await axios.post('http://localhost:3000/api/resume/analyze', formData, {
+      const res = await axios.post('https://creercraftbackend-mongouri.up.railway.app/api/resume/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 

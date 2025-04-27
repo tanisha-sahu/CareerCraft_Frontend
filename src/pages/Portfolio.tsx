@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
   useEffect(() => {
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/portfolio/view/${portfolioId}`);
+        const res = await fetch(`https://creercraftbackend-mongouri.up.railway.app/api/portfolio/view/${portfolioId}`);
         const json = await res.json();
         setPortfolioData(json.portfolio);
         setTemplate(json.portfolio.template);

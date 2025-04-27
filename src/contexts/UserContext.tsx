@@ -89,7 +89,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const signup = async (name: string, email: string, password: string, profession: string) => {
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/auth/signup',
+        'https://creercraftbackend-mongouri.up.railway.app/api/auth/signup',
         { name, email, password, profession },
         { withCredentials: true }
       );
@@ -103,7 +103,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const logout = async () => {
     try {
-      await axios.post('http://localhost:3000/api/auth/logout', {}, { withCredentials: true });
+      await axios.post('https://creercraftbackend-mongouri.up.railway.app/api/auth/logout', {}, { withCredentials: true });
       setUser(null);
       navigate('/login', { replace: true });
       showToast("success", "Logged out successfully!");
