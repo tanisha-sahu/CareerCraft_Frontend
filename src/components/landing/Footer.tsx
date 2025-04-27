@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
       <footer className="bg-[#E5E7EB] mb-0 w-full">
-        <div className="w-full max-w-screen-xl mx-auto py-4 ">
+        <div className="w-full max-w-screen-xl mx-auto py-4 sm:px-4">
           <div className="sm:flex sm:items-center md:justify-between justify-center">
             <a href="/" className="flex items-center mb-4 sm:mb-0 space-x-3">
               <img

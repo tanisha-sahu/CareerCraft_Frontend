@@ -27,7 +27,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="flex items-start justify-center bg-[#F8F8EC] min-h-screen md:min-h-full px-4 py-6">
+    <div className="flex items-start justify-center bg-[#F8F8EC] min-h-screen md:min-h-full px-4 py-6 mb-8">
       <div
         className="w-full max-w-md bg-white rounded-xl shadow-2xl p-8"
         style={{ fontFamily: 'Poppins, sans-serif' }}
