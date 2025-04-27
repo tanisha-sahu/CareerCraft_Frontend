@@ -31,7 +31,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   useEffect(() => {
     const checkSession = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/auth/session", {
+        const res = await axios.get("https://creercraftbackend-mongouri.up.railway.app/api/auth/session", {
           withCredentials: true,
         });
         setUser(res.data.user);
@@ -73,7 +73,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/auth/login',
+        'https://creercraftbackend-mongouri.up.railway.app/api/auth/login',
         { email, password },
         { withCredentials: true }
       );
