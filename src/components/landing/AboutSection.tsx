@@ -7,7 +7,7 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-12 flex items-center">
               <h2 className="text-5xl font-bold text-black ">
-                Who You Are?
+                Who We Are?
               </h2>
             </div>
             <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0">
@@ -29,7 +29,7 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row-reverse items-center">
             <div className="md:w-1/2 md:pl-12 flex items-center">
               <h2 className="text-5xl font-bold text-black ">
-                What You Do?
+                What We Do?
               </h2>
             </div>
             <div className="md:w-1/2 md:pr-12 mt-8 md:mt-0">
@@ -69,7 +69,7 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row-reverse items-center">
             <div className="md:w-1/2 md:pl-12 flex items-center">
             <h2 className="text-5xl font-bold text-black ">
-              Your Mission or Vision?
+              Our Mission or Vision?
             </h2>
           </div>
           <div className="md:w-1/2 md:pr-12 mt-8 md:mt-0">
