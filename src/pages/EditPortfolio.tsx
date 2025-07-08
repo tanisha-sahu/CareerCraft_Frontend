@@ -13,7 +13,7 @@ const EditPortfolio: React.FC = () => {
   useEffect(() => {
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/portfolio/view/${id}`);
+        const res = await fetch(`https://carreercraft-backend.onrender.com/api/portfolio/view/${id}`);
         if (!res.ok) throw new Error('Failed to fetch portfolio');
         const data = await res.json();
         setPortfolioData(data.portfolio);
