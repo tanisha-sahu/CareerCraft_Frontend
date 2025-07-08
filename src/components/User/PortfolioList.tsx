@@ -23,7 +23,7 @@ const Portfolio: React.FC = () => {
     try {
       if (!user?.id) return;
       setLoading(true);
-      const response = await axios.get(`http://localhost:3000/api/portfolio/list/${user.id}`);
+      const response = await axios.get(`https://carreercraft-backend.onrender.com/api/portfolio/list/${user.id}`);
       setPortfolios(response.data);
     } catch (err) {
       setError('Failed to load portfolio data.');
@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
     if (!confirmDelete) return;
   
     try {
-      const response = await fetch(`https://creercraftbackend-mongouri.up.railway.app/api/portfolio/delete/${id}`, {
+      const response = await fetch(`https://carreercraft-backend.onrender.com/api/portfolio/delete/${id}`, {
         method: 'DELETE',
         credentials: 'include',
       });
